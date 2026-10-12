@@ -2,7 +2,7 @@
 #include "arreglos.h"
 
 int main() {
-    const int TAM = 5;
+    const int TAM = 3;
     double a[TAM], b[TAM], total[TAM];
 
     std::cout << "Llenando el arreglo A:\n";

@@ -21,16 +21,20 @@ inline void llenarArreglo(double datos[], int tam) {
     }
 }
 
-// Suma los arreglos a y b posicion por posicion
+// Suma los arreglos A y B posicion por posicion
 // y guarda cada resultado en el arreglo total.
 //
-// Recibe: los arreglos a y b (solo se leen), el arreglo total
+// Recibe: los arreglos A y B (solo se leen), el arreglo total
 //         (aqui se guardan las sumas) y el tamano.
 // Devuelve: nada (void), las sumas quedan en total.
 inline void sumarArreglos(const double a[], const double b[], double total[], int tam) {
     // TODO: ¿cuantas veces se debe repetir el ciclo?
-    // TODO: ¿que posicion de a se suma con que posicion de b?
-    // TODO: ¿en que posicion de total se guarda el resultado?
+    // TODO: ¿que posicion de A se suma con que posicion de B?
+    // TODO: ¿en que posicion de TOTAL se guarda el resultado?
+
+    for (int i = 0; i < tam; i++) {
+        total[i] = a[i] + b[i];
+    }
 }
 
 // Muestra cada suma con el formato: NUMERO 1 + NUMERO 2 = TOTAL
@@ -40,6 +44,10 @@ inline void sumarArreglos(const double a[], const double b[], double total[], in
 inline void imprimirSumas(const double a[], const double b[], const double total[], int tam) {
     // TODO: ¿como recorres los tres arreglos con un solo indice?
     // TODO: ¿que se imprime en cada linea?
+
+    for (int i = 0; i < tam; i++) {
+        std::cout << a[i] << " + " << b[i] << " = " << total[i] << "\n";
+    }
 }
 
 #endif
